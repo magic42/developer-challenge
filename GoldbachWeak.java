@@ -1,14 +1,24 @@
-public class GoldbachWeak {
+xpublic class GoldbachWeak {
     public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
-    
-        if(n%2!=0){
-            System.out.println("Are you trying to fool me with an even number?... <Phlegmatic tone>")
-            return 0;
+        int n=0;
+        try {
+            n = Integer.parseInt(args[0]);
+        }catch(ArrayIndexOutOfBoundsException f){
+            System.out.println("At least put something in as an argument.");
+            return;
+        }catch(NumberFormatException e){
+            System.out.println("Please insert a f****g number next time... <Nervous tone>");
+            return;
+        }
+
+        if(n%2==0){
+            System.out.println("Are you trying to fool me with an even number?... <Phlegmatic tone>");
+            return;
         }
 
         if(n<7){
-            System.out.println("Maybe try something greater than 7... <Passive aggressive tone>")
+            System.out.println("Maybe try something greater than 7... <Passive aggressive tone>");
+            return;
         }
 
         // Initially assume all integers are prime
@@ -19,7 +29,7 @@ public class GoldbachWeak {
 
         // Mark non-primes <= n using Sieve of Eratosthenes
         for (int factor = 2; factor*factor <= n; factor++) {
-
+    
             // if factor is prime, then mark multiples of factor as nonprime
             // suffices to consider mutiples factor, factor+1, ...,  n/factor
             if (isPrime[factor]) {

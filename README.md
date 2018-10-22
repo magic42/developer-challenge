@@ -1,31 +1,12 @@
-# Developer Challenge #001
-## Goldbach's Weak Conjecture
+#### To run my code you need Java. 
 
-### Background 
-In number theory, Goldbach's weak conjecture, also known as the odd Goldbach conjecture, the ternary Goldbach problem, or the 3-primes problem, states that
+- To install java on your computer type: 
+    - apt-get update && apt-get upgrade
+    - apt-get install default-jdk
 
-Every odd number greater than 5 can be expressed as the sum of three primes. (A prime may be used more than once in the same sum.)
+- To compile my file you need to type:
+    - javac GoldbachWeak.java
 
-### User Acceptance Criteria
-- [ ] Create a Script that when supplied with a file of odd numbers will Describe the given input as the sum of 3 prime numbers
-
-### Specification
-- Can Be written in **Any** Language
-- The Script must accept a file that will list all of the numbers to be tested
-
-### Notes
-- 1 is **not** a prime number
-
-### Example Output
-```BASH
- 93197 = 93187 + 3 + 7
- 433 = 421 + 5 + 7
-```
-
- ### Submission Date
- Monday 22/10/18 @ 0900
-
- ### Submission Details
- Clone This Repo and branch from the `goldbachs-weak-conjecture` branch
- Create a new Directory with your name and store your submission here.
- Create a PR to merge your branch to this branch.
+- To run the compiled file you need to type:
+    - java GoldbachWeak <argument>
+    - where argument is a string (prefferably a number)
