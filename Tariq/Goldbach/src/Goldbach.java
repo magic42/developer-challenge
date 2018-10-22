@@ -58,7 +58,10 @@ public class Goldbach {
 	 */
 	public boolean isPrime(int number){
 		
-		if(!isOdd(number) && number != 2){
+		if(number == 2){
+			return true;		
+		}
+		else if(!isOdd(number)){
 			//no even number can be prime bar 2
 			return false;
 		}

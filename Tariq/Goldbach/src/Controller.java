@@ -1,12 +1,16 @@
 public class Controller {
 
 	public static void main(String[] args) {
+
+
+
+		String fileName = "numbers";
+
+		
 		
 		Goldbach goldbach  = new Goldbach();
 		TextUserInterface TUI = new TextUserInterface(goldbach);
 		
-		while(true){
-			TUI.prompt();
-		}
+		TUI.getFileName(fileName);
 	}
 }

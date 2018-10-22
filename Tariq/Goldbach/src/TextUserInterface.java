@@ -150,5 +150,15 @@ public class TextUserInterface {
 		}
 	}
 	
+	public void getFileName(String fileName){
+		try{
+				String filePathName = "numbersDirectory/" + fileName;
+				File numberFile = new File(fileName);
+				parseFile(numberFile);
+			}
+			catch(Exception e) {
+				display("file could not be found, check your spelling or something");
+			}
+	}
 	
 }
