@@ -1,0 +1,8 @@
+For the cmd line version please cd into the Tariq directory then run 
+
+`javac Controller.java Goldbach.java TextUserInterface.java`
+
+To run use this command `java Controller`
+
+For a much more visual and enjoyable experience use the previous commit's eclipse version for a responsive textuserInterface 
+and a bit more functionality.
